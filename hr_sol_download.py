@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 algo_url = "https://www.hackerrank.com/domains/algorithms"
 algo_page = "algorithms.html" 
 
-user = 'savita.seetaraman5@gmail.com'
-password = 'googleAmm@ch1' 
+user = ''
+password = '' 
 
 response = requests.get(algo_url, auth = (user, password))
 
