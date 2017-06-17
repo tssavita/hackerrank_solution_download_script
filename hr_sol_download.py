@@ -49,7 +49,7 @@ for topic in bs_algo.find_all('a', attrs={'data-analytics':'PracticeChapterList'
             solution_url = str("https://www.hackerrank.com/rest/contests/master/challenges/" + data_attribute + "/hackers/" + fullusername + "/download_solution")
             solution_name = data_attribute + ".cpp"
             ua = UserAgent()
-            header = {'__utmc': '74197771', 'session_utm_params': '%7B%22s%22%3A%22101hack50-reminder-3-day%22%2C%22m%22%3A%22email%22%2C%22c%22%3A%22101hack50%22%7D', 'session_id': '8ej4wjmh-1497693495381', '_hrank_session': '1c37210b17a2338d8889bd2c8b9321ac5e3efd9f6b2f2aa5fa1ebc2c72e0ce0b58affe4622c554321a8e53c7d7b2b10949aac38ded3acfa13e702ef84c160a1d', 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'}
+            header = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'}
             params = {'':'', 'render':'download'}
             response = requests.get( solution_url, headers=header, auth = (username, password), params = params, allow_redirects=False)
             print(solution_url, response.text, response.status_code)
